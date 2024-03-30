@@ -1269,7 +1269,7 @@ audio {
 }
 .message {
 	margin-top: 200px;
-	display: none;
+	display: block;
 }
 .message p {
 	font-family: 'Signika', sans-serif;
@@ -1277,7 +1277,7 @@ audio {
 	text-transform: uppercase;
 	color: #C4515C;
 	text-shadow: 2px 2px 2px #FFF;
-	display: none;
+	display: block;
 	font-weight: bold;
 }
 
