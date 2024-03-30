@@ -1269,7 +1269,7 @@ audio {
 }
 .message {
 	margin-top: 200px;
-	display: block;
+	display: none;
 }
 .message p {
 	font-family: 'Signika', sans-serif;
