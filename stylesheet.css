@@ -1279,18 +1279,6 @@ audio {
 	text-shadow: 2px 2px 2px #FFF;
 	display: none;
 	font-weight: bold;
-	opacity: 0;
-	animation: fadeIn 1s forwards;
-}
-
-@keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
 
 .btn-primary {
         border-color: #466baf;
