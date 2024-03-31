@@ -161,15 +161,15 @@
     window.onload = function() {
         var messageContainer = document.getElementById('messageContainer');
 	var paragraphs = messageContainer.querySelectorAll('p');
-	 // Tạo đoạn "hidden"
-        var hiddenParagraph = document.createElement('p');
-        hiddenParagraph.innerHTML = "Chúc bé iu của anh đỗ nguyện vọng 1, <br> tiền đồ xán lạn tương lai rộng mở, <br> một đời không lo âu. <br> Chúc cưng có tuổi 18 thật rực rỡ !!!";
+	
 
         // Đếm số lượng câu
         var numberOfSentences = paragraphs.length;
 
         // Chèn đoạn "hidden" vào sau câu thứ 4
         if (numberOfSentences >= 4) {
+		var hiddenParagraph = document.createElement('p');
+            hiddenParagraph.innerHTML = "Chúc bé iu của anh đỗ nguyện vọng 1, <br> tiền đồ xán lạn tương lai rộng mở, <br> một đời không lo âu. <br> Chúc cưng có tuổi 18 thật rực rỡ !!!";
             paragraphs[3].insertAdjacentElement('afterend', hiddenParagraph);
         }
 
