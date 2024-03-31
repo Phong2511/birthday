@@ -169,7 +169,7 @@
         if (numberOfSentences >= 4) {
             var hiddenParagraph = document.createElement('p');
             hiddenParagraph.innerHTML = "Chúc bé iu của anh đỗ nguyện vọng 1, <br> tiền đồ xán lạn tương lai rộng mở, <br> một đời không lo âu. <br> Chúc cưng có tuổi 18 thật rực rỡ !!!";
-            paragraphs[3].insertAdjacentElement('afterend', hiddenParagraph);
+            paragraphs[3].insertAdjacentElement('afterend', hiddenParagraph.cloneNode(true));
         }
     });
         
