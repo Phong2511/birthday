@@ -102,7 +102,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row message" >
+		<div class="row message" id="messageContainer">
 			<div class="col-md-12">
 					
   					<p>  Chúc bé iu cụa anh đỗ nguyện vọng 1, </p>
@@ -110,11 +110,7 @@
 					<p> một đời không lo âu. </p>
 					<p> Chúc cưng có tuổi 18 thật rực rỡ !!! </p>
 
-					<p style="display: block;"> 
-						Chúc bé iu cụa anh đỗ nguyện vọng 1, <br>
-						tiền đồ xán lạn tương lai rộng mở, <br>
-						một đời không lo âu. <br>
-						Chúc cưng có tuổi 18 thật rực rỡ !!! </p>
+					
 
 
 			</div>
@@ -160,5 +156,13 @@
   ga('create', 'UA-58229732-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+<script>
+    window.onload = function() {
+        var messageContainer = document.getElementById('messageContainer');
+        var hiddenParagraph = document.createElement('p');
+        hiddenParagraph.innerHTML = "Chúc bé iu của anh đỗ nguyện vọng 1, <br> tiền đồ xán lạn tương lai rộng mở, <br> một đời không lo âu. <br> Chúc cưng có tuổi 18 thật rực rỡ !!!";
+        messageContainer.appendChild(hiddenParagraph);
+    }
 </script>
 </html>
