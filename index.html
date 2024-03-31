@@ -160,9 +160,15 @@
 <script>
     window.onload = function() {
         var messageContainer = document.getElementById('messageContainer');
-        var hiddenParagraph = document.createElement('p');
-        hiddenParagraph.innerHTML = "Chúc bé iu của anh đỗ nguyện vọng 1, <br> tiền đồ xán lạn tương lai rộng mở, <br> một đời không lo âu. <br> Chúc cưng có tuổi 18 thật rực rỡ !!!";
-        messageContainer.appendChild(hiddenParagraph);
+	var paragraphs = messageContainer.querySelectorAll('p');
+	 var hiddenParagraphIndex = 4; // Vị trí của đoạn "hidden"
+
+	 if (paragraphs.length >= hiddenParagraphIndex) {
+            var hiddenParagraph = document.createElement('p');
+            hiddenParagraph.innerHTML = "Chúc bé iu của anh đỗ nguyện vọng 1, <br> tiền đồ xán lạn tương lai rộng mở, <br> một đời không lo âu. <br> Chúc cưng có tuổi 18 thật rực rỡ !!!";
+            messageContainer.insertBefore(hiddenParagraph, paragraphs[hiddenParagraphIndex]);
+        }
     }
+        
 </script>
 </html>
